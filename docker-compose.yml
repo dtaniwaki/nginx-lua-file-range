@@ -1,0 +1,11 @@
+version: '3'
+services:
+  webdav:
+    build: .
+    ports:
+      - "8000:80"
+    volumes:
+      - "./tmp/media:/media"
+    environment:
+      USERNAME: user
+      PASSWORD: passwd
